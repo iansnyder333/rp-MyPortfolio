@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block title %} Projects{% endblock title %}
+{% block body %} class="blog-author bg-gray-200" {% endblock body %}
+{% block content %}
+<section>
+<header class="bg-gradient-dark">
+    <div class="page-header min-vh-35" style="background-image: url('{% static 'img/bg.jpg' %}')">
+        <span class="mask bg-gradient-dark opacity-3"></span>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mx-auto my-auto">
+                    <h1 class="text-white">Projects</h1>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+</section>
+<section>
+    <div class="row">
+        {% for p in projects %}
+        <div class="col-md-4">
+            <div class="card mb-2">
+                <img class="card-img-top" src="{% static p.image %}">
+                <div class="card-body">
+                    <h5 class="card-title">{{p.title}}</h5>
+                    <p class="card-text">{{p.description}}</p>
+                    <a href="{% url 'project_detail' p.pk %}" class="btn btn-primary">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

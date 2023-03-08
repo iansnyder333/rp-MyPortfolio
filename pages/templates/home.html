@@ -1,0 +1,211 @@
+<!--
+=========================================================
+* Material Kit 2 - v3.0.4
+=========================================================
+
+* Product Page:  https://www.creative-tim.com/product/material-kit 
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+{% extends "base.html" %}
+
+{% load static %}
+{% block title %} Ian Snyder's Porftfolio {% endblock title %}
+{% block body %} class="blog-author bg-gray-200" {% endblock body %}
+
+ 
+
+    {% block content %}
+    <header class="bg-gradient-dark">
+        <div class="page-header min-vh-75" style="background-image: url('{% static 'img/bg.jpg' %}')">
+            <span class="mask bg-gradient-dark opacity-3"></span>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center mx-auto my-auto">
+                        <h1 class="text-white">Ian Snyder's Portfolio</h1>
+                        <p class="lead mb-4 text-white mt-3">Online portfolio developed with Django and material kit 2 open source bootstrap. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="py-sm-7 py-5 position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mx-auto">
+                    <div class="mt-n8 mt-md-n9 text-center">
+                        <img class="avatar avatar-xxl shadow-xl position-relative z-index-2" src="{% static 'Snyder_Ian-42431CC.jpg' %}" alt="bruce"
+                            loading="lazy">
+                    </div>
+                    <div class="row py-5">
+                        <div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h3 class="mb-0">Ian Snyder</h3>
+                                
+                            </div>
+                            <p class="text-lg mb-0">
+                                Spring 2023 graduate from the University of Pittsburgh with a 
+                                Bachelors of Science in Computational Biology and a minor in Applied
+                                Statistics. Through my studies I have developed a passion for programming
+                                and data analysis. Upon graduating I aspire to become a software engineer!
+                                <br><a href="{% url 'socials_index' %}" class="text-info icon-move-right">Contact 
+                                    me
+                                    <i class="fas fa-arrow-right text-sm ms-1"></i>
+                                </a>
+                            </p>
+
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="mb-5">Technical Background</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card card-plain">
+                        <div class="card-header p-0 position-relative">
+                            <a class="d-block blur-shadow-image">
+                                <img src="{% static 'web1.png' %}" alt="img-blur-shadow"
+                                    class="img-fluid shadow border-radius-lg" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="card-body px-0">
+                            <h5>
+                                <a href="javascript:;" class="text-dark font-weight-bold">Software Development</a>
+                            </h5>
+                            <p>
+                                My University studies as an undergraduate has given me extensive exposure to 
+                                object-oriented programming in Python and Java; both in algorithim sand data structures.
+                                Some of my projects include: creating an autocompleter based on current user character stream
+                                that reccomends words based on user history, designing a data crawler to return relevant cars for 
+                                sale based on filters specified by the user, creating a network analysis to find optimal paths between access
+                                points in a network based on cable type along with adding,updating,and deleting access points from previous 
+                                network. All these projects were done from scratch without any JCL classes and are on my github. They are privatley available upon 
+                                request due to University Policy.
+                            </p>
+                            <a href="https://github.com/iansnyder333" class="text-info text-sm icon-move-right">My Github
+                                <i class="fas fa-arrow-right text-xs ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card card-plain">
+                        <div class="card-header p-0 position-relative">
+                            <a class="d-block blur-shadow-image">
+                                <img src="{% static 'db1.jpeg' %}" alt="img-blur-shadow"
+                                    class="img-fluid shadow border-radius-lg" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="card-body px-0">
+                            <h5>
+                                <a href="javascript:;" class="text-dark font-weight-bold">Data Analysis</a>
+                            </h5>
+                            <p>
+                                I have extensive experience in working with relational databased using MySQL for 
+                                both data retrieval and data analysis. I am extremely familiar with using packages such as 
+                                sqllite3 to implement queries in Python, along with analyzing large data with Python packages such as 
+                                Pandas, numPy and R packages such as ggplot2. I also have significant exposure to using both machine learning 
+                                and deep learning for data analysis using Scikit-learn and GNINA.
+                                My minor in Applied Statistics has given me ample knowledge in high level statistics, including 
+                                linear regression, catagorical data analysis, nonparametric statistics, and applied sampling. I 
+                                have experience using all of these tools using R, Python, Minitab, and Microsoft Excell.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card card-plain">
+                        <div class="card-header p-0 position-relative">
+                            <a class="d-block blur-shadow-image">
+                                <img src="{% static 'dj.jpeg' %}" alt="img-blur-shadow"
+                                    class="img-fluid shadow border-radius-lg" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="card-body px-0">
+                            <h5>
+                                <a href="javascript:;" class="text-dark font-weight-bold">Other Developer Tools</a>
+                            </h5>
+                            <p>
+                                In all four years of undergraduate, I have used BASH commands in a UNIX enviroment to 
+                                handle all shell related operations. I have also used Git, Jupyter, and Visual Studio Online to collaberate,
+                                share, and deploy my software related applications.
+                                In my own personal time I learned how to write HTML, CSS, and Javascript both from 
+                                scratch along with utilizing Bootstrap. I have also used Django to create multiple websites including this one 
+                                completley independently, developing web applications that feature user profiles with username and passwords with a password recovery system,
+                                user blog posts displayed in a feed based on its category with a working comment feature, and several other basic features for a blog style social media 
+                                web application.
+
+
+
+                            </p>
+                            <a href="{% url 'project_index' %}" class="text-info text-sm icon-move-right">My Projects
+                                <i class="fas fa-arrow-right text-xs ms-1"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+
+    </section>
+</div>
+<section class="py-lg-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card card-plain">
+                    <div class="row">
+                        <div class="card-header p-0 position-relative">
+                            <a class="d-block blur-shadow-image">
+                                <img src="{% static 'IMG_4828.jpeg' %}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg"
+                                    loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="card-body px-1">
+                    <h3>
+                        <a href="javascript:;" class="text-dark font-weight-bold">More about me</a>
+                    </h3>
+                    <p>
+                        Outside of work, there are many things I enjoy! I love to excercise and 
+                        have been bodybuilding as a hobby for over 7 years. While bodybuilding does 
+                        require a strict diet, I still love to go out to new restuarants and experience 
+                        dining with my friends and family. I also love to travel, and have been to many different
+                        countries and experienced many different cultures! I love animals, and 
+                        in my spare time, I love going to places like the zoo with my girlfriend, and going on a 
+                        real safari and experiencing real wildlife is definitley on my bucket list! In general, 
+                        I love to try new things and always like to keep an optimistic mindset. I strongly value 
+                        keeping positive relationships with people outside of work, along with maintaining a positive 
+                        standing with prior employers and colleagues. 
+                    
+                    
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+       
+    </div>
+</section>
+   
+{% endblock content %}
+
+
+ 
